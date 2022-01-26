@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <div class='container'>
+    <h1>Movie Tickets</h1>
+    <form id='input'>
+      <label for="age">Age</label>
+      <select id="age">
+        <option value="selectOption">Select Option</option>
+        <option value="child">Child</option>
+        <option value="adult">Adult</option>
+        <option value="senior">Senior</option>
+      </select>
+      <label for="movie">Available Movies</label>
+      <select id="movie">
+        <option value="selecOption">Select Option</option>
+        <option value="batman">The Batman</option>
+        <option value="scream">Scream</option>
+        <option value="spiderman">Spider-Man: No Way Home</option>
+        <option value="sing2">Sing 2</option>
+      </select>
+      <label for="time">Time</label>
+      <select id="time">
+        <option value="selecOption">Select Option</option>
+        <option value="matinee">Matinee</option>
+        <option value="evening">Evening</option>
+      </select>
+      <button class='btn btn-primary'>Submit</button>
+    </form>
+    <div id='results'>
+      <p>You chose: <span id="ageChoice">Age Here</span></p>
+      <p> Your Movie: <span id="movieChoice">Movie Here</span></p>
+      <p>Movie Time: <span id="timeChoice">Time Here</span></p>
+      <p>Total Price: <span id="ticketPrice">Price</span></p>
+    </div>
+  </div>
+</body>
+</html>
